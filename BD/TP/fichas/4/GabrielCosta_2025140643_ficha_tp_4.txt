@@ -1,0 +1,70 @@
+-- ex. 1
+
+SELECT en.nemp, en.nome, su.nemp, su.nome
+FROM emp en
+INNER JOIN emp su ON su.encar = en.nemp
+ORDER BY en.nome, su.nome;
+
+-- ex. 2
+
+SELECT dp.ndep, dp.nome
+FROM dep dp
+
+MINUS
+
+SELECT d.ndep, d.nome
+FROM dep d
+JOIN EMP e ON e.ndep = d.ndep;
+
+-- ex. 3
+
+SELECT UPPER(e.nome), LOWER(e.funcao), INITCAP(dp.nome)
+FROM emp e
+INNER JOIN dep dp ON e.ndep = dp.ndep
+WHERE UPPER(e.funcao) LIKE 'Vendedor'
+ORDER BY dp.nome, e.nome;
+
+-- ex. 4
+
+SELECT COUNT(*) AS "Numero de empregados"
+FROM emp
+WHERE sal > 1000;
+
+-- ex. 5
+
+SELECT COUNT(*) as "Empregados sem direito a premio"
+FROM emp
+WHERE premios IS NULL;
+
+-- ex. 6
+
+SELECT 
+    COUNT(*) AS "n_emp", 
+    AVG(sal) AS "media_sal", 
+    SUM(sal*12)
+FROM 
+    emp
+WHERE 
+    sal >= 900;
+
+-- ex. 7
+
+SELECT
+    e.nome AS "Nome",
+    e.sal AS "Salario",
+    ROUND((e.sal * 1.02), 2) AS "Salario com aumento"
+FROM
+    emp e
+WHERE
+    UPPER(e.funcao) LIKE 'GESTOR';
+    
+-- ex. 8
+
+SELECT
+    e.nome AS "Nome",
+    e.sal AS "Salario",
+    ROUND((e.sal * 1.02), 0) AS "Salario com aumento"
+FROM
+    emp e
+WHERE
+    UPPER(e.funcao) LIKE 'GESTOR';
