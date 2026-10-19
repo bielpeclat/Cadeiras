@@ -23,4 +23,4 @@ int main () {
     return 0;
 }
 
-// ultimas alteracoes antes de mandar para o portatil
+// alteracoes feitas no portatil
