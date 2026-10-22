@@ -3,4 +3,12 @@ project(4)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(4 main.cpp)
+add_executable(4 main.cpp
+        imovel.cpp
+        imovel.h
+        apartamento.cpp
+        apartamento.h
+        loja.cpp
+        loja.h
+        imobiliaria.cpp
+        imobiliaria.h)
