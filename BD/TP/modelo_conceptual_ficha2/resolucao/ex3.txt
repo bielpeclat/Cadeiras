@@ -1,0 +1,13 @@
+Aluno: Gabriel Costa
+
+a) Apenas 1 aula, não seria possível dar aulas em datas diferentes, uma vez que as chaves primárias que iríamos utilizar seriam idênticas, porque temos: <Id_professor, Id_aluno, Id_actividade>
+
+Demonstração: 
+
+(Professor João, Aluno Pedro, Aula Surf) -> no dia 11/09
+(Professor João, Aluno Pedro, Aula Surf) -> no dia 12/09
+
+Não há como distinguir ambas as situações com o modelo atual.
+
+b) O novo relacionamento é redundante, pois, conseguimos saber os professores que lecionam dadas atividades através do relacionamento *Aprende*.
+Uma situação em que esse novo relacionamento seria preciso, é caso fosse um novo professor, que pudesse leccionar uma actividade, mas, ainda não tem alunos, nesse caso, o modelo antigo não seria capaz de obter o que queremos, e o novo já conseguiria.
