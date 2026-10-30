@@ -3,7 +3,7 @@
 //
 
 #include <sstream>
-#include "imovel.h"
+#include "../imovel.h"
 
 using namespace std;
 

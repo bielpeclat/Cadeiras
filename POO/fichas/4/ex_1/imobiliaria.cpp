@@ -2,7 +2,7 @@
 // Created by gabriel-costa on 10/22/26.
 //
 
-#include "imobiliaria.h"
+#include "../imobiliaria.h"
 #include <sstream>
 
 imobiliaria::imobiliaria() : numImoveis(0) {

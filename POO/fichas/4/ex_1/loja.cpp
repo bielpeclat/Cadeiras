@@ -2,7 +2,7 @@
 // Created by gabriel-costa on 10/22/26.
 //
 
-#include "loja.h"
+#include "../loja.h"
 #include <sstream>
 #include <string>
 

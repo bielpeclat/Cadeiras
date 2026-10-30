@@ -3,7 +3,7 @@
 //
 
 #include <sstream>
-#include "apartamento.h"
+#include "../apartamento.h"
 
 using namespace std;
 
