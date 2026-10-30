@@ -9,4 +9,6 @@ add_executable(poo_f4_ex2 main.cpp
         Gato.h
         Gato.cpp
         Cao.cpp
-        Cao.h)
+        Cao.h
+        Clinica.cpp
+        Clinica.h)

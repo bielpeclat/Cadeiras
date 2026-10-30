@@ -9,7 +9,7 @@
 
 class Gato : public Animal {
 public:
-   Gato(const std::string &nm, double ps, const std::string &dn, const std::string &esp);
+   Gato(const std::string &nm, double ps, const std::string &dn);
 
    std::string come() override;
    std::string exercita() override;

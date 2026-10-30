@@ -5,8 +5,10 @@
 #include <sstream>
 #include "Animal.h"
 #include "Gato.h"
+#include <algorithm>
 
-Gato::Gato(const std::string &nm, double ps, const std::string &dn, const std::string &esp) : Animal(nm, ps, dn, esp) {}
+
+Gato::Gato(const std::string &nm, double ps, const std::string &dn) : Animal(nm, ps, dn, "Gato") {}
 
 std::string Gato::come() {
    return "O que?! Patê mais uma vez?...\n";
@@ -20,7 +22,8 @@ std::string Gato::exercita() {
    std::ostringstream oss;
    oss << "Derrubei " << n_jarras << " jarras e arranhei " << m_pessoas << " pessoas!\n";
 
-   peso = std::max(2.5, peso*0.9);
+   double peso = std::max(2.5, getPeso()*0.9);
+   setPeso(peso);
 
    return oss.str();
 }

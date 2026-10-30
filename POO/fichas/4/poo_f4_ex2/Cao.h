@@ -9,7 +9,7 @@
 
 class Cao : public Animal {
 public:
-   Cao(const std::string &nm, double ps, const std::string &dn, const std::string &esp);
+   Cao(const std::string &nm, double ps, const std::string &dn);
 
    std::string come() override;
    std::string exercita() override;
