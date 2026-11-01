@@ -1,14 +1,8 @@
 cmake_minimum_required(VERSION 4.1)
-project(4)
+project(ex_1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(4 main.cpp
-        imovel.cpp
-        imovel.h
-        apartamento.cpp
-        apartamento.h
-        loja.cpp
-        loja.h
-        imobiliaria.cpp
-        imobiliaria.h)
+add_executable(ex_1 main.cpp
+        Imovel.cpp
+        Imovel.h)
