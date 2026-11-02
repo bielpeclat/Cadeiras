@@ -13,4 +13,4 @@ int main(void) {
 
     printf("Escreveu: %s", texto);
     return 0;
-}
+} 
