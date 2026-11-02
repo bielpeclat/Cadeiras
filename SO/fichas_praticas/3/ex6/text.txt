@@ -1,0 +1,8 @@
+dfran
+dfran.c
+ding
+aaaa
+ding.c
+text.txt
+traduz
+traduz.c

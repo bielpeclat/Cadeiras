@@ -1,0 +1,8 @@
+PING google.com (2a00:1450:4003:805::200e) 56 data bytes
+64 bytes from mad01s24-in-x0e.1e100.net (2a00:1450:4003:805::200e): icmp_seq=1 ttl=117 time=23.0 ms
+64 bytes from mad01s24-in-x0e.1e100.net (2a00:1450:4003:805::200e): icmp_seq=2 ttl=117 time=23.4 ms
+64 bytes from mad01s24-in-x0e.1e100.net (2a00:1450:4003:805::200e): icmp_seq=3 ttl=117 time=23.8 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 22.965/23.371/23.790/0.336 ms

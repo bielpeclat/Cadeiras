@@ -1,0 +1,4 @@
+total 20
+-rw-r-x--- 1 bielpeclat bielpeclat     0 Nov  2 17:58 lista_arquivos.txt
+-rwxrwxr-x 1 bielpeclat bielpeclat 16088 Nov  2 17:58 prog
+-rw-rw-r-- 1 bielpeclat bielpeclat   320 Nov  2 17:58 prog.c
